@@ -72,6 +72,6 @@ a {
 
 .star {
 	color: yellow;
-	font-size: 20px;
-	width: 80%;
+	font-size: 3vw;
+	padding: 20px;
 }
