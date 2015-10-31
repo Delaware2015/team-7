@@ -39,6 +39,14 @@
 			</div>
 		</div>
 
+		<div class="row upcoming">
+			<div class="col-xs-4">
+				<p>Upcoming event</p>
+			</div>
+			<div class="col-xs-8">
+				<a href="#">SAT Prep class at CAS Center</a>
+			</div>
+		</div>
 
 
 		<form class="row top form-group" method="POST">

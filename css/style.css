@@ -22,7 +22,7 @@ h2 {
 
 .prof h2 {
 	margin-top: 75px;
-	margin-left: 50px;
+	margin-left: -50px;
 }
 
 .table {
@@ -85,6 +85,6 @@ img{
 	width: 80%;
 }
 
-.prof{
+.prof, .upcoming{
 	border-bottom: 5px solid #0072B1;
 }
