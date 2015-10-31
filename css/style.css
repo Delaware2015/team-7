@@ -69,3 +69,9 @@ a {
     font-size: 36px;
     color: white;
 }
+
+.star {
+	color: yellow;
+	font-size: 20px;
+	width: 80%;
+}
