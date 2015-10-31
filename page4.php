@@ -7,6 +7,13 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css"/>
 </head>
 <body>
+
+	<?php
+		if(isset($_POST['search'])){
+			header("Location: http://ec2-54-87-67-182.compute-1.amazonaws.com/team-7/page5.php");
+		}
+	?>
+
 	<div class="container-fluid">
 		<div class="row header">
 			<div class="col-xs-12">
