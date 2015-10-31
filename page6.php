@@ -23,24 +23,7 @@
 			<tbody>
 				<?php
 				echo '<tr><td>Test-1</td></tr>';
-require("database.php");
-echo '<tr><td>Test0</td></tr>';
-$universityID = (isset($_GET['id'])) ? $_GET['id'] : '';
-$result = $conn->query("SELECT * FROM task WHERE school_id = '".$universityID."'");
-echo '<tr><td>Test1</td></tr>';
-if (!$result) {
-    echo 'Could not run query: ' . mysql_error();
-    exit;
-}
-		
-while($row = $result->fetch_assoc()) {
-	if $row['completed'] == "1" {
-		$com = 'checked';
-	}
-	
-	echo '<tr><td>'.$row['task_name'].'</td><td>'.$row['deadline'].'</td><td>'.$row['deadline'].'</td><td>'.$row['created'].'</td><tr><input type="checkbox" '.$com.'></td></tr>';
-}
-		
+
 ?>
 			</tbody>
 		</table>
