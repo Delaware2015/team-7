@@ -29,15 +29,6 @@ while($row = $result->fetch_assoc()) {
 			</div>
 			<table class="table-condensed">
 
-				<?php
-				
-				$sql2 = "SELECT * FROM task WHERE date_format(deadline, '%YYYY-%mm-%dd') in '$row['deadline']'";
-				$result2 = $conn->query($sql2);
-				
-				while($row2 = $result2->fetch_assoc()) {
-					echo '<tr><td>Something</td><td>'.$row2['task_name'].'</td></tr>';
-				}
-				?>
 			</table>
 			<?php } ?>
 		</div>
