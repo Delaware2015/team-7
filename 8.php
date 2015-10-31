@@ -17,7 +17,6 @@
 <?php
 require("database.php");
 $sql = "SELECT distinct t.deadline FROM task as t, student as s WHERE s.student_id = t.student_id ORDER BY t.deadline";
-echo 'haha';
 $result = $conn->query($sql);
 
 while($row = $result->fetch_assoc()) {
