@@ -11,8 +11,13 @@
 if (isset($_POST['submit'])){
 	$username = $_POST['inputEmail3'];
 	$password = $_POST['inputPassword3'];
-	echo $username;
-	echo $password;
+	
+	if($username == 'rberry95@yahoo.com') && ($password == 'team07') {
+		header("Location: http://ec2-54-87-67-182.compute-1.amazonaws.com/team-7/2.html");
+	} else {
+		echo 'There was a big mistake?';
+	}
+	
 } else {
 ?>
 	<div class="container-fluid">
