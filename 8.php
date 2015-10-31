@@ -16,12 +16,13 @@
 								
 <?php
 require("database.php");
-$sql = "SELECT t.deadline FROM task as t, student as s WHERE s.student_id = t.student_id ORDER BY t.deadline";
+$sql = "SELECT distinct t.deadline FROM task as t, student as s WHERE s.student_id = t.student_id ORDER BY t.deadline";
 $result = $conn->query($sql);
 $blank = array();
 
 while($row = $result->fetch_array()) {
 	$blank[] = $row['deadline'];
+}
 	foreach($blank as $value) {
 ?>
 			<div class="row">
@@ -30,10 +31,10 @@ while($row = $result->fetch_array()) {
 				</div>
 			</div>
 			<table class="table-condensed">
-				
+				<?php echo $value; ?>
 				
 			</table>
-			<?php } } ?>
+			<?php } ?>
 		</div>
 	<body>
 </html>
