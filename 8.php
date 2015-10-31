@@ -16,7 +16,7 @@
 								
 <?php
 require("database.php");
-$sql = "SELECT distinct t.deadline FROM task as t, student as s WHERE s.student_id = t.student_id ORDER BY t.deadline";
+$sql = "SELECT t.deadline FROM task as t, student as s WHERE s.student_id = t.student_id ORDER BY t.deadline";
 $result = $conn->query($sql);
 $blank = array();
 
