@@ -1,4 +1,5 @@
 .table {
+	margin-top: 50px;
 	width: 80%;
 	margin-left: auto;
 	margin-right: auto;
@@ -8,4 +9,8 @@
 	background-color: #0072B1;
 	color: white;
 	font-family: 'ff-meta-web-pro-1', Tahoma, Arial, Helvetica;
+}
+
+a {
+	color: #0072B1;
 }
