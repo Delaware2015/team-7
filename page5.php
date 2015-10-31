@@ -7,11 +7,16 @@
 		<link rel="stylesheet" type="text/css" href="css/style.css"/>
 	</head>
 	<body>
-		<br><div class="row">
+		<div class="row">
+			<div col="col-xs-12">
+				<h1>Find Your College</h1>
+			</div>
+		</div>
+		<div class="row">
 			<div class="col-xs-offset-1 col-xs-10">
 				<div class="input-group">
 				  <input type="text" class="form-control" placeholder="Search for Colleges" aria-describedby="basic-addon2">
-				  <span class="input-group-addon glyphicon glyphicon-search" id="basic-addon2"></span>
+				  <a href="#"><span class="input-group-addon glyphicon glyphicon-search" id="basic-addon2"></span></a>
 				</div>
 			</div>
 		</div>

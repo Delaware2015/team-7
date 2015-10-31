@@ -1,3 +1,7 @@
+body{
+	font-family: 'ff-meta-web-pro-1', Tahoma, Arial, Helvetica;
+}
+
 .table {
 	margin-top: 50px;
 	width: 80%;
@@ -8,7 +12,6 @@
 .table th {
 	background-color: #0072B1;
 	color: white;
-	font-family: 'ff-meta-web-pro-1', Tahoma, Arial, Helvetica;
 }
 
 a {
