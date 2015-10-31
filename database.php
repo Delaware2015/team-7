@@ -1,6 +1,6 @@
 <?php
 
-$servername = "http://ec2-54-87-67-182.compute-1.amazonaws.com";
+$servername = "localhost";
 $username = "root";
 $password = "code4good";
 $dbname = "code4good.db";
