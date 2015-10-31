@@ -26,9 +26,8 @@ $sql = "SELECT * FROM school";
 $result = $conn->query($sql);
 		
 while($row = $result->fetch_assoc()) {
-	// This section will be where all of the college information goes.
-	// College id number, College name, college application deadline.
-	echo '<tr><td><a href="page6.php?id='.$row['school_id'].'">'.$row['school_name'].'</a></td><td>'.$row['enrollment_deadline'].'</td></tr>';
+	list($date, $time) = split(" ", $row['enrollment_deadline']);
+	echo '<tr><td><a href="page6.php?id='.$row['school_id'].'">'.$row['school_name'].'</a></td><td>'.date_format(date_create($date), 'F jS Y').'</td></tr>';
 }
 		
 ?>
