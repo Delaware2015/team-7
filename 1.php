@@ -8,6 +8,11 @@
 <body>
 	
 <?php
+if(isset($_POST['signup'])){
+	header("Location: http://ec2-54-87-67-182.compute-1.amazonaws.com/team-7/2.html";)
+}
+
+
 if (isset($_POST['submit'])){
 	$username = $_POST['inputEmail3'];
 	$password = $_POST['inputPassword3'];
@@ -57,7 +62,7 @@ if (isset($_POST['submit'])){
 
 			<div class="form-group">
 			    <div class="col-xs-offset-5 col-xs-3">
-			      <button type="submit" class="btn btn-default btn-block center-block">Sign Up</button>
+			      <button type="submit" class="btn btn-default btn-block center-block" name="signup">Sign Up</button>
 			    </div>
 			</div>
 
