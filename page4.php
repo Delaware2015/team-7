@@ -35,7 +35,7 @@
 		</form>
 		<form class="row bottom form-group">
 			<button class="col-xs-6 btn btn-default btn-block" type="submit">
-				<div class="row">
+				<div class="row star">
 					<div class="col-xs-4">
 						<span class="glyphicon glyphicon-star"></span>
 					</div>
