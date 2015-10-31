@@ -6,7 +6,7 @@
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
 	</head>
 	<body>
-		<div class="row">
+		<br><div class="row">
 			<div class="col-xs-offset-1 col-xs-10">
 				<div class="input-group">
 				  <input type="text" class="form-control" placeholder="Search for Colleges" aria-describedby="basic-addon2">
