@@ -20,7 +20,7 @@ $sql = "SELECT t.deadline FROM task as t, student as s WHERE s.student_id = t.st
 $result = $conn->query($sql);
 $blank = array();
 
-while($row = $result->fetch_assoc()) {
+while($row = $result->fetch_array()) {
 	$blank[] = $row['deadline'];
 	echo $row['deadline'];
 ?>
