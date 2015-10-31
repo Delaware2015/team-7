@@ -48,6 +48,7 @@ while($row = $result->fetch_assoc()) {
 				?>
 >>>>>>> c2f230ac1e8d13d21724651af0f6c6061f3e30dd
 			</table>
+			<?php } ?>
 		</div>
 	<body>
 </html>
