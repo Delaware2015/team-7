@@ -7,6 +7,19 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css"/>
 </head>
 <body>
+<?php
+
+if(isset($_POST['search'])) {
+	header("Location: http://ec2-54-87-67-182.compute-1.amazonaws.com/team-7/page5.php");
+}
+
+if(isset($_POST['master'])) {
+	header("Location: http://ec2-54-87-67-182.compute-1.amazonaws.com/team-7/page8.php");
+}
+
+
+?>
+	<form method="POST">
 	<div class="container-fluid">
 		<div class="row header">
 			<div class="col-xs-12">
@@ -17,10 +30,10 @@
 			</div>
 		</div>
 		<div class="row top">
-			<button class="col-xs-6 btn btn-default btn-block" type="submit">
+			<button class="col-xs-6 btn btn-default btn-block" type="submit" name="search">
 				<h2 class="text-center vert-align">Search for Colleges</h2>
 			</button>
-			<button class="col-xs-6 btn btn-default btn-block" type="submit">
+			<button class="col-xs-6 btn btn-default btn-block" type="submit" name="master">
 				<h2 class="text-center vert-align">Master Colleges</h2>
 			</button>
 		</div>
@@ -33,5 +46,6 @@
 			</button>
 		</div>
 	</div>
+	</form>
 </body>
 </html>
