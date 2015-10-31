@@ -12,7 +12,9 @@ if (isset($_POST['submit'])){
 	$username = $_POST['inputEmail3'];
 	$password = $_POST['inputPassword3'];
 	
-	echo $username;
+	if($username == 'rberry95@yahoo.com') {
+		echo 'yessss';
+	}
 	
 } else {
 ?>
