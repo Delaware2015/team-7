@@ -11,7 +11,6 @@
 				<h1 class="text-center">Cornell Name<span class="glyphicon glyphicon-plus pull-right" aria-hidden="true" style="font-size:3vw;"></span></h1>
 			</div>
 		</div>
-<p>Hello</p>
 		<table class="table table-hover">
 			<thead>
 				<th>Task Name</th>
@@ -33,6 +32,9 @@
 				}
 				
 				while($row = $result->fetch_assoc()) {
+					if $row['completed'] === 0 {
+						$com = 'checked';
+					}
 					echo '<tr><td>'.$row['task_name'].'</td><td>'.$row['deadline'].'</td><td>'.$row['deadline'].'</td><td>'.$row['created'].'</td><tr><input type="checkbox"></td></tr>';
 				}
 				?>
