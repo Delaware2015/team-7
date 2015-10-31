@@ -35,12 +35,7 @@ while($row = $result->fetch_assoc()) {
 				$result2 = $conn->query($sql2);
 				
 				while($row2 = $reseult2->fetch_assoc()) {
-					if($row['completed'] == 0) {
-						$com = 'Not completed!';
-					} else {
-						$com = 'Completed!';
-					}
-					echo '<tr><td>'.$com.'</td><td>'.$row2['task_name'].'</td></tr>';
+					echo '<tr><td>Something</td><td>'.$row2['task_name'].'</td></tr>';
 				}
 				?>
 			</table>
