@@ -22,6 +22,7 @@ $blank = array();
 
 while($row = $result->fetch_assoc()) {
 	$blank[] = $row['deadline'];
+	echo $row['deadline'];
 ?>
 
 			<div class="row">
