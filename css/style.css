@@ -29,7 +29,8 @@ a {
 }
 
 .top .col-xs-6, .bottom .col-xs-6 {
-	padding: 100px;
+	width: 50%;
+	height: 50%;
 }
 
 .top {
