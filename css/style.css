@@ -46,3 +46,14 @@ a {
   	top: 50%;
   	transform: translateY(-50%);
 }
+
+.glyph-pos {
+	font-size: 2vw;
+    position: absolute;
+    top: 20px;
+    right: 5%;
+}
+
+.glyphicon {
+	font-size: 36px;
+}
