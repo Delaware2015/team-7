@@ -45,6 +45,12 @@ a {
 	border-bottom: 1px solid #0072B1;
 }
 
+.top button, .bottom button {
+	border: none;
+	border-radius: 0px;
+	padding: 0px;
+}
+
 .top .col-xs-6:nth-child(1), .bottom .col-xs-6:nth-child(1){
 	border-right: 1px solid #0072B1;
 }
