@@ -35,10 +35,7 @@
 				}
 				
 				while($row = $result->fetch_assoc()) {
-					if $row['completed'] == 0 {
-						$com = 'checked';
-					}
-					echo $com;
+					echo '<tr><td>'.$row['task_name'].'</td><td>'.$row['deadline'].'</td><td>'.$row['deadline'].'</td><td>'.$row['created'].'</td><tr><input type="checkbox"></td></tr>';
 				}
 				?>
 			</tbody>
