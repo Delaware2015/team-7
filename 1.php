@@ -8,7 +8,7 @@
 <body>
 	
 <?php
-if ($_POST['submit']){
+if (isset($_POST['submit'])){
 
 	$username = $_POST['inputEmail3'];
 	$password = $_POST['inputPassword3'];
