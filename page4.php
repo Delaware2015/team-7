@@ -26,7 +26,7 @@
 			</div>
 		</div>
 
-		<div class="row">
+		<div class="row prof">
 			<div class="col-xs-4">
 				<img class="img-responsive" src="images/profpic.jpg"/>
 			</div>
@@ -36,7 +36,7 @@
 						<h3>Rachel Berry</h3>
 					</div>
 				</div>
-			</div.
+			</div>
 		</div>
 
 
