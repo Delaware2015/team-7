@@ -13,14 +13,35 @@
 		</div>
 
 		<table class="table table-hover">
-			<tr>
+			<thead>
 				<th>Task Name</th>
 				<th>Date Started</th>
 				<th>Time Spent on Task</th>
 				<th>Deadline</th>
 				<th>Completed?</th>
-			</tr>
-			
+			</thead>
+			<tbody>
+<?php
+require("database.php");
+$universityID = (isset($_GET['id'])) ? $_GET['id'] : '';
+$sql = "SELECT * FROM task WHERE school_id = '".$universityID."'";
+$result = $conn->query($sql);
+
+if (!$result) {
+    echo 'Could not run query: ' . mysql_error();
+    exit;
+}
+		
+while($row = $result->fetch_assoc()) {
+	if $row['completed'] == "1" {
+		$com = 'checked';
+	}
+	
+	echo '<tr><td>'.$row['task_name'].'</td><td>'.$row['deadline'].'</td><td>'.$row['deadline'].'</td><td>'.$row['created'].'</td><tr><input type="checkbox" '.$com.'></td></tr>';
+}
+		
+?>
+			</tbody>
 		</table>
 	</body>
 </html>
