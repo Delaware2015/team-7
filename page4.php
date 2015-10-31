@@ -36,6 +36,17 @@
 		<form class="row bottom form-group">
 			<button class="col-xs-6 btn btn-default btn-block" type="submit">
 				<h2 class="text-center vert-align">Achievements</h2>
+				<div class="row">
+					<div class="col-xs-4">
+						<span class="glyphicon glyphicon-star"></span>
+					</div>
+					<div class="col-xs-4">
+						<span class="glyphicon glyphicon-star"></span>
+					</div>
+					<div class="col-xs-4">
+						<span class="glyphicon glyphicon-star"></span>
+					</div>
+				</div>
 			</button>
 			<button class="col-xs-6 btn btn-default btn-block" type="submit">
 				<h2 class="text-center vert-align">Contact Mentor</h2>
