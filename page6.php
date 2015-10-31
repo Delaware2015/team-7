@@ -24,7 +24,7 @@
 <?php
 require("database.php");
 $universityID = (isset($_GET['id'])) ? $_GET['id'] : '';
-$result = $conn->query("SELECT * FROM task WHERE school_id = '".$universityID."';");
+$result = $conn->query("SELECT * FROM task WHERE school_id = '".$universityID."'");
 
 if (!$result) {
     echo 'Could not run query: ' . mysql_error();
@@ -36,7 +36,7 @@ while($row = $result->fetch_assoc()) {
 		$com = 'checked';
 	}
 	
-	//echo '<tr><td>'.$row['task_name'].'</td><td>'.$row['deadline'].'</td><td>'.$row['deadline'].'</td><td>'.$row['created'].'</td><tr><input type="checkbox" '.$com.'></td></tr>';
+	echo '<tr><td>'.$row['task_name'].'</td><td>'.$row['deadline'].'</td><td>'.$row['deadline'].'</td><td>'.$row['created'].'</td><tr><input type="checkbox" '.$com.'></td></tr>';
 }
 		
 ?>
