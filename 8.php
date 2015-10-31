@@ -22,17 +22,28 @@ $blank = array();
 
 while($row = $result->fetch_array()) {
 	$blank[] = $row['deadline'];
+	foreach($blank as $value) {
 ?>
-
 			<div class="row">
 				<div class="col-xs-12">
-					<h3><i><?php foreach (array_unique($blank) as $value) { echo $value; } ?></i></h3>
+					<h3><i><?php echo $value; ?></i></h3>
 				</div>
 			</div>
 			<table class="table-condensed">
+				
+				<?php
+				
+				$sql2 = "SELECT * FROM task WHERE date_format($row['deadline'], '%Y-%m-%d') in '$row['deadline']'";
+				$result2 = $conn->query($sql2);
+				
+				while($row2 = $result2->fetch_assoc()) {
+					echo '<tr><td>Something</td><td>'.$row2['task_name'].'</td></tr>';
+				}
+				?>
+
 			
 			</table>
-			<?php } ?>
+			<?php } } ?>
 		</div>
 	<body>
 </html>
