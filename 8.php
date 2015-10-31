@@ -22,7 +22,6 @@ $blank = array();
 
 while($row = $result->fetch_array()) {
 	$blank[] = $row['deadline'];
-	echo $row['deadline'];
 ?>
 
 			<div class="row">
