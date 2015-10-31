@@ -28,7 +28,7 @@ if (isset($_POST['submit'])){
 				<h1 class="center-block">College App</h1>
 			</div>
 		</div>
-		<form class="form-horizontal">
+		<form class="form-horizontal" method="POST">
 			<div class="form-group">
 				   <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
 				    <div class="col-sm-10 col-xs-12">
