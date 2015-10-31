@@ -12,8 +12,9 @@
 		if(isset($_POST['search'])){
 			header("Location: http://ec2-54-87-67-182.compute-1.amazonaws.com/team-7/page5.php");
 		} elseif(isset(_$POST['calendar'])){
-			header("Location: http://ec2-54-87-67-182.compute-1.amazonaws.com/team-7/page8.php")
+			header("Location: http://ec2-54-87-67-182.compute-1.amazonaws.com/team-7/page8.php");
 		}
+		else {}
 	?>
 
 	<div class="container-fluid">
