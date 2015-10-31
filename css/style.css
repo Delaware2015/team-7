@@ -2,6 +2,11 @@ body{
 	font-family: 'ff-meta-web-pro-1', Tahoma, Arial, Helvetica;
 }
 
+h1 {
+	color: #0072B1;
+	margin-bottom: 50px;
+}
+
 .table {
 	margin-top: 50px;
 	width: 80%;
