@@ -9,7 +9,7 @@
 	
 <?php
 if(isset($_POST['signup'])){
-	header("Location: http://ec2-54-87-67-182.compute-1.amazonaws.com/team-7/2.html";)
+	header("Location: http://ec2-54-87-67-182.compute-1.amazonaws.com/team-7/2.html");
 }
 
 
