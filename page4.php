@@ -19,12 +19,26 @@
 	<div class="container-fluid">
 		<div class="row header">
 			<div class="col-xs-12">
-				<h1 class="text-center">Home</h1>
+				<h1 class="text-center">Welcome to CASbook</h1>
 			</div>
 			<div class="glyph-pos">
 				<span class="glyphicon glyphicon-plus pull-right" aria-hidden="true"></span>
 			</div>
 		</div>
+
+		<div class="row">
+			<div class="col-xs-4">
+				<img class="img-responsive" src="images/profpic.jpg"/>
+			</div>
+			<div class="row">
+				<div class="col-xs-12">
+					<h3>Rachel Berry</h3>
+				</div>
+			</div>
+		</div>
+
+
+
 		<form class="row top form-group" method="POST">
 			<button class="col-xs-6 btn btn-default btn-block" type="submit" name="search">
 				<h2 class="text-center vert-align">Search for Colleges</h2>
