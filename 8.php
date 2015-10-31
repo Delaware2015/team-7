@@ -16,7 +16,7 @@
 								
 <?php
 require("database.php");
-$sql = "SELECT t.deadline FROM task as t, student as s WHERE s.student_id = t.student_id ORDER BY t.deadline";
+$sql = "SELECT distinct t.deadline FROM task as t, student as s WHERE s.student_id = t.student_id ORDER BY t.deadline";
 $result = $conn->query($sql);
 $blank = array();
 
@@ -31,7 +31,17 @@ while($row = $result->fetch_array()) {
 				</div>
 			</div>
 			<table class="table-condensed">
-				<?php echo $value; ?>
+				<?php
+				
+				list($date, $time) = split(" ", $value)
+				$sql = "SELECT * FROM `task` WHERE `deadline` BETWEEN '".$date." 00:00:00' and '".$date." 23:59:59'";
+				$result = $conn->query($sql);
+				
+				while($row = $result->fetch_array()) {
+					echo $row['deadline'];
+				}
+				
+				?>
 				
 			</table>
 			<?php } ?>
