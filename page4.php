@@ -30,11 +30,13 @@
 			<div class="col-xs-4">
 				<img class="img-responsive" src="images/profpic.jpg"/>
 			</div>
-			<div class="row">
-				<div class="col-xs-12">
-					<h3>Rachel Berry</h3>
+			<div class="col-xs-8">
+				<div class="row">
+					<div class="col-xs-12">
+						<h3>Rachel Berry</h3>
+					</div>
 				</div>
-			</div>
+			</div.
 		</div>
 
 
