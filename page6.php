@@ -24,6 +24,7 @@
 				<?php
 				echo '<tr><td>Test-1</td></tr>';
 				require("database.php");
+				echo '<tr><td>Test0</td></tr>';
 
 				?>
 			</tbody>
