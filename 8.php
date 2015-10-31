@@ -16,15 +16,17 @@
 								
 <?php
 require("database.php");
-$sql = "SELECT distinct t.deadline FROM task as t, student as s WHERE s.student_id = t.student_id ORDER BY t.deadline";
+$sql = "SELECT t.deadline FROM task as t, student as s WHERE s.student_id = t.student_id ORDER BY t.deadline";
 $result = $conn->query($sql);
+$blank = array();
 
 while($row = $result->fetch_assoc()) {
+	$blank[] = $row['deadline'];
 ?>
 
 			<div class="row">
 				<div class="col-xs-12">
-					<h3><i><?php echo $row['deadline']; ?></i></h3>
+					<h3><i><?php foreach (array_unique($blank) as $value) { echo $value; } ?></i></h3>
 				</div>
 			</div>
 			<table class="table-condensed">
