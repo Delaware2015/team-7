@@ -24,6 +24,7 @@
 				<?php
 				echo '<tr><td>Test-1</td></tr>';
 				require("database.php");
+				$universityID = (isset($_GET['id'])) ? $_GET['id'] : '';
 				echo '<tr><td>Test0</td></tr>';
 
 				?>
