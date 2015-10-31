@@ -35,7 +35,7 @@
 				}
 				
 				while($row = $result->fetch_assoc()) {
-					if $row['completed'] == 1 {
+					if $row['completed'] == 0 {
 						$com = 'checked';
 					}
 					echo $com;
