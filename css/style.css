@@ -7,6 +7,11 @@ h1 {
 	margin-bottom: 50px;
 }
 
+header {
+	background-color: #0072B1;
+	color: white;
+}
+
 h2 {
 	color: #8C8C8C;
 	font-size: 3vw;
@@ -51,9 +56,10 @@ a {
 	font-size: 2vw;
     position: absolute;
     top: 20px;
-    right: 5%;
+    right: 15%;
 }
 
 .glyphicon {
 	font-size: 36px;
+	color: #0072B1;
 }
