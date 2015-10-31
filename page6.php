@@ -23,7 +23,7 @@
 <?php
 require("database.php");
 $universityID = (isset($_GET['id'])) ? $_GET['id'] : '';
-$sql = "SELECT * FROM task WHERE school_id = $universityID;
+$sql = "SELECT * FROM task WHERE school_id = $universityID";
 $result = $conn->query($sql);
 		
 while($row = $result->fetch_assoc()) {
