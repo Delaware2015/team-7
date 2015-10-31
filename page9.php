@@ -20,17 +20,17 @@
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-xs-offset-4 col-xs-2">
+				<div class="col-xs-offset-2 col-xs-4">
 					<button class="btn btn-default btn-block pull-right" id="button-start">Start Working</button>
 				</div>
-				<div class="col-xs-2">
+				<div class="col-xs-4">
 					<button class="btn btn-default btn-block pull-left" id="button-stop">Stop Working</button>
 				</div>
 
 			</div> 
 			
 			<div class="row">
-				<div class="col-xs-offset-4 col-xs-4">
+				<div class="col-xs-offset-2 col-xs-8">
 					<button class="btn btn-default btn-block center-block" id="button-reset">Task Completed</button>
 				</div>
 			</div>

@@ -9,51 +9,36 @@
 		<div class="container-fluid">
 			<div class="row">
 				<div class="col-xs-12">
-					<h1>Student Name's Calendar</h1>
+					<h1>Student Calendar</h1>
 				</div>
 			</div>
+			
+								
+<?php
+require("database.php");
+$sql = "SLECT distinct t.deadline FROM tasks as t, student as s WHERE s.student_id = t.student_id ORDER BY t.deadline";
+$result = $conn->query($sql);
 
+while($row = $result->fetch_assoc()) {
+	
+?>
 			<div class="row">
 				<div class="col-xs-12">
-					<h3><i>10/30/15</i></h3>
+					<h3><i><?php echo $row['deadline']; ?></i></h3>
 				</div>
 			</div>
 
 			<table class="table-condensed">
-				<tr>
-					<td>DUE</td>
-					<td>Cornell Application</td>
-				</tr>
-				<tr>
-					<td>DUE</td>
-					<td>FAFSA</td>
-				</tr>
-				<tr>
-					<td>task</td>
-					<td>Purdue essay</td>
-				</tr>
-			</table>
-
-
-			<div class="row">
-				<div class="col-xs-12">
-					<h3><i>10/31/15</i></h3>
-				</div>
-			</div>
-
-			<table class="table-condensed">
-				<tr>
-					<td>DUE</td>
-					<td>Purdue Essay</td>
-				</tr>
-				<tr>
-					<td>task</td>
-					<td>Something</td>
-				</tr>
-				<tr>
-					<td>task</td>
-					<td>More things</td>
-				</tr>
+				<?php
+				
+				$sql = "SELECT * FROM tasks WHERE deadline = '".$row['deadline']."'";
+				$result = $conn->query($sql);
+				
+				while($row = $result->fetch_assoc()) {
+					echo "<tr><td>ajsdfjaksdfjasdf</td><td>".$row['task_name']."<td></tr>";
+				}
+				
+				?>
 			</table>
 		</div>
 	<body>
