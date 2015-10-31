@@ -30,7 +30,6 @@ $row = $result->fetch_assoc();
 			</thead>
 			<tbody>
 				<?php
-				require("database.php");
 	
 				$result = $conn->query("SELECT * FROM task WHERE school_id = '".$universityID."'");
 				
