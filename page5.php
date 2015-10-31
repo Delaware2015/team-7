@@ -15,7 +15,7 @@
 			</div>
 		</div>
 		
-		<table class="table table-striped" style="width: 75%">
+		<center><table class="table table-striped" style="width: 75%">
 			<thead>
 				<th>Name</th><th>Enrollment Date</th>
 			</thead>
@@ -33,6 +33,6 @@ while($row = $result->fetch_assoc()) {
 		
 ?>
 			</tbody>
-		</table>
+		</table></center>
 	</body>
 </html>
