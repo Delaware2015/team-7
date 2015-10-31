@@ -22,13 +22,11 @@
 			</thead>
 			<tbody>
 				<?php
-				echo '<tr><td>Test-1</td></tr>';
 				require("database.php");
 				$universityID = (isset($_GET['id'])) ? $_GET['id'] : '';
-				echo '<tr><td>Test0</td></tr>';
+	
 				$result = $conn->query("SELECT * FROM task WHERE school_id = '".$universityID."'");
 				
-				echo '<tr><td>Test1</td></tr>';
 				if (!$result) {
     					echo 'Could not run query: ' . mysql_error();
     					exit;
