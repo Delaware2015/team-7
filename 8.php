@@ -33,7 +33,7 @@ while($row = $result->fetch_array()) {
 			<table class="table-condensed">
 				<?php
 				
-				list($date, $time) = split(" ", $value)
+				list($date, $time) = split(" ", $value);
 				$sql = "SELECT * FROM `task` WHERE `deadline` BETWEEN '".$date." 00:00:00' and '".$date." 23:59:59'";
 				$result = $conn->query($sql);
 				
