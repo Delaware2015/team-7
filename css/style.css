@@ -86,5 +86,6 @@ img{
 }
 
 .prof, .upcoming{
+	margin-top: 10px;
 	border-bottom: 5px solid #0072B1;
 }
