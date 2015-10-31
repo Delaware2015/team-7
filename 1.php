@@ -13,8 +13,8 @@ if ($_POST['submit']){
 	$username = $_POST['inputEmail3'];
 	$password = $_POST['inputPassword3'];
 	
-	if strcmp($username, 'rberry95@yahoo.com') == 0 {
-		if strcmp($password, 'team07') == 0 {
+	if ($username == 'rberry95@yahoo.com') == 0 {
+		if ($password == 'team07') == 0 {
 			header('Location: http://ec2-54-87-67-182.compute-1.amazonaws.com/team-7/2.html');
 		}
 	} else {
