@@ -19,7 +19,7 @@ if (isset($_POST['submit'])){
 	
 	$flag = "True";
 	
-	if($username != 'rberry95@yahoo.com') {
+	if($username != 'rjberry95@yahoo.com') {
 		$flag = "False";
 	}
 	
