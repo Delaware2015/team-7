@@ -24,21 +24,21 @@ while($row = $result->fetch_array()) {
 	$blank[] = $row['deadline'];
 }
 	foreach($blank as $value) {
+		list($date, $time) = split(" ", $value);
 ?>
 			<div class="row">
 				<div class="col-xs-12">
-					<h3><i><?php echo $value; ?></i></h3>
+					<h3><i><?php echo $date; ?></i></h3>
 				</div>
 			</div>
 			<table class="table-condensed">
 				<?php
-				
-				list($date, $time) = split(" ", $value);
+
 				$sql = "SELECT * FROM `task` WHERE `deadline` BETWEEN '".$date." 00:00:00' and '".$date." 23:59:59'";
 				$result = $conn->query($sql);
 				
 				while($row = $result->fetch_array()) {
-					echo $row['deadline'];
+					echo $row['task_name'] . '<br>';
 				}
 				
 				?>
