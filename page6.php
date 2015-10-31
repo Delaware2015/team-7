@@ -11,7 +11,7 @@
 				<h1 class="text-center">Cornell Name<span class="glyphicon glyphicon-plus pull-right" aria-hidden="true" style="font-size:3vw;"></span></h1>
 			</div>
 		</div>
-
+<p>Hello</p>
 		<table class="table table-hover">
 			<thead>
 				<th>Task Name</th>
@@ -22,6 +22,7 @@
 			</thead>
 			<tbody>
 				<?php
+				echo '<tr><td>Test-1</td></tr>';
 require("database.php");
 echo '<tr><td>Test0</td></tr>';
 $universityID = (isset($_GET['id'])) ? $_GET['id'] : '';
