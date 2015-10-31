@@ -40,3 +40,9 @@ a {
 .top .col-xs-6:nth-child(1), .bottom .col-xs-6:nth-child(1){
 	border-right: 1px solid #0072B1;
 }
+
+.vert-align{
+	position: relative;
+  	top: 50%;
+  	transform: translateY(-50%);
+}
