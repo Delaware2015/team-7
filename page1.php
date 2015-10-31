@@ -37,8 +37,8 @@ if (isset($_POST['submit'])){
 ?>
 	<div class="container-fluid">
 		<div class="row">
-			<div class="col-sm-12">
-				<h1 class="center-block">College App</h1>
+			<div class="col-sm-12 .header">
+				<h1 class="text-center">CASbook</h1>
 			</div>
 		</div>
 		<form class="form-horizontal" method="POST">
