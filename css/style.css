@@ -75,3 +75,11 @@ a {
 	font-size: 3vw;
 	padding: 20px;
 }
+
+img{
+	width: 80%;
+}
+
+.prof{
+	border-bottom: 5px solid #0072B1;
+}
