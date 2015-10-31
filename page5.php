@@ -8,7 +8,7 @@
 	</head>
 	<body>
 		<div class="row">
-			<div col="col-xs-12">
+			<div col="col-xs-offset-4 col-xs-4">
 				<h1>Find Your College</h1>
 			</div>
 		</div>
@@ -16,8 +16,8 @@
 			<div class="col-xs-offset-1 col-xs-10">
 				<div class="input-group">
 				  <input type="text" class="form-control" placeholder="Search for Colleges" aria-describedby="basic-addon2">
-				  <span class="input-group-btn glyphicon glyphicon-search">
-			      	<button class="btn btn-default" type="button"></button>
+				  <span class="input-group-btn">
+			      	<button class="btn btn-default glyphicon glyphicon-search" type="button"></button>
 			      </span>
 				</div>
 			</div>
