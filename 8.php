@@ -44,6 +44,7 @@ while($row = $result->fetch_assoc()) {
 				}
 				?>
 			</table>
+			<?php } ?>
 		</div>
 	<body>
 </html>
