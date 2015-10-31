@@ -29,6 +29,20 @@ while($row = $result->fetch_assoc()) {
 			</div>
 
 			<table class="table-condensed">
+				<?php
+				
+				$sql2 = "SELECT * FROM task WHERE deadline in ".$row['deadline']."";
+				$result2 = $conn->query($sql2);
+				
+				while($row2 = $reseult2->fetch_assoc()) {
+					if($row['completed'] == 0) {
+						$com = 'Not completed!';
+					} else {
+						$com = 'Completed!';
+					}
+					echo '<tr><td>'.$com.'</td><td>'.$row2['task_name'].'</td></tr>';
+				}
+				?>
 			</table>
 		</div>
 	<body>
