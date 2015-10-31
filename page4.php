@@ -12,7 +12,7 @@
 		if(isset($_POST['search'])){
 			header("Location: http://ec2-54-87-67-182.compute-1.amazonaws.com/team-7/page5.php");
 		} elseif(isset(_$POST['calendar'])){
-			header("Location: http://ec2-54-87-67-182.compute-1.amazonaws.com/team-7/page8.php");
+			header("Location: http://ec2-54-87-67-182.compute-1.amazonaws.com/team-7/8.php");
 		}
 		else {}
 	?>
@@ -30,7 +30,7 @@
 			<button class="col-xs-6 btn btn-default btn-block" type="submit" name="search">
 				<h2 class="text-center vert-align">Search for Colleges</h2>
 			</button>
-			<button class="col-xs-6 btn btn-default btn-block" type="submit" name="calandar">
+			<button class="col-xs-6 btn btn-default btn-block" type="submit" name="calendar">
 				<h2 class="text-center vert-align">Master Calendar</h2>
 			</button>
 		</form>
