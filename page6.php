@@ -28,7 +28,7 @@ echo $sql;
 $result = $conn->query($sql);
 		
 while($row = $result->fetch_assoc()) {
-	if $row['completed'] == 1 {
+	if $row['completed'] == "1" {
 		$com = 'checked';
 	}
 	
