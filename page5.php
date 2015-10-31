@@ -15,7 +15,7 @@
 			</div>
 		</div>
 		
-		<table class="table table-striped">
+		<table class="table table-striped" style="width: 75%">
 			<thead>
 				<th>Name</th><th>Enrollment Date</th>
 			</thead>
@@ -28,7 +28,7 @@ $result = $conn->query($sql);
 while($row = $result->fetch_assoc()) {
 	// This section will be where all of the college information goes.
 	// College id number, College name, college application deadline.
-	echo '<tr><td>'.$row['school_name'].'</td><td>'.$row['enrollment_date'].'</td></tr>';
+	echo '<tr><td>'.$row['school_name'].'</td><td>'.$row['enrollment_deadline'].'</td></tr>';
 }
 		
 ?>
