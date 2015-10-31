@@ -24,8 +24,12 @@
 require("database.php");
 $universityID = (isset($_GET['id'])) ? $_GET['id'] : '';
 $sql = "SELECT * FROM task WHERE school_id = '".$universityID."'";
-echo $sql;
 $result = $conn->query($sql);
+
+if (!$result) {
+    echo 'Could not run query: ' . mysql_error();
+    exit;
+}
 		
 while($row = $result->fetch_assoc()) {
 	if $row['completed'] == "1" {
