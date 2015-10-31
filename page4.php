@@ -23,8 +23,8 @@
 				<span class="glyphicon glyphicon-plus pull-right" aria-hidden="true"></span>
 			</div>
 		</div>
-		<form class="row top form-group">
-			<button class="col-xs-6 btn btn-default btn-block" type="submit">
+		<form class="row top form-group" method="POST">
+			<button class="col-xs-6 btn btn-default btn-block" type="submit" name="search">
 				<h2 class="text-center vert-align">Search for Colleges</h2>
 			</button>
 			<button class="col-xs-6 btn btn-default btn-block" type="submit">
