@@ -17,22 +17,6 @@
 		
 		<div class="row">
 			<table>
-		<?php
-
-		require("database.php");
-
-		$sql = "SELECT * FROM school";
-		$result = $conn->query($sql);
-		
-		echo '<th>Name</th><th>Enrollment Date</th>';
-		
-		while($row = $result->fetch_assoc()) {
-			// This section will be where all of the college information goes.
-			// College id number, College name, college application deadline.
-			echo '<tr><td>'.$row['school_name'].'</td><td>'.$row['enrollment_date'].'</td></tr>'
-		}
-		
-		?>
 			</table>
 		</div>
 	</body>
