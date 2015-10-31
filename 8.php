@@ -27,7 +27,6 @@ while($row = $result->fetch_assoc()) {
 					<h3><i><?php echo $row['deadline']; ?></i></h3>
 				</div>
 			</div>
-<?php } ?>
 			<table class="table-condensed">
 
 				<?php
