@@ -39,7 +39,7 @@ $row = $result->fetch_assoc();
 				}
 				
 				while($row = $result->fetch_assoc()) {
-					echo '<tr><td><a href="8.php">'.$row['task_name'].'</a></td><td>'.$row['deadline'].'</td><td>'.$row['deadline'].'</td><td>'.$row['created'].'</td><td><input type="checkbox"></td></tr>';
+					echo '<tr><td><a href="page9.php">'.$row['task_name'].'</a></td><td>'.$row['deadline'].'</td><td>'.$row['deadline'].'</td><td>'.$row['created'].'</td><td><input type="checkbox"></td></tr>';
 				}
 				?>
 			</tbody>
