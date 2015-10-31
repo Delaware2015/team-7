@@ -1,3 +1,11 @@
+<?php
+require("database.php");
+$universityID = (isset($_GET['id'])) ? $_GET['id'] : '';
+$sql = "SELECT * FROM school WHERE school_id = '".$universityID."'";
+$result = $conn->query($sql);
+$row = $result->fetch_row();
+?>
+
 <html>
 	<head>
 		<title>Search Colleges</title>
@@ -7,8 +15,9 @@
 	</head>
 	<body>
 		<div class="row">
+			<?php?>
 			<div class="col-xs-12">
-				<h1 class="text-center">Cornell Name<span class="glyphicon glyphicon-plus pull-right" aria-hidden="true" style="font-size:3vw;"></span></h1>
+				<h1 class="text-center"><?php echo $row['school_name']; ?> Application<span class="glyphicon glyphicon-plus pull-right" aria-hidden="true" style="font-size:3vw;"></span></h1>
 			</div>
 		</div>
 		<table class="table table-hover">
@@ -22,7 +31,6 @@
 			<tbody>
 				<?php
 				require("database.php");
-				$universityID = (isset($_GET['id'])) ? $_GET['id'] : '';
 	
 				$result = $conn->query("SELECT * FROM task WHERE school_id = '".$universityID."'");
 				
