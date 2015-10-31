@@ -9,6 +9,9 @@ h1 {
 
 .header {
 	background-color: #0072B1;
+}
+
+.header h1 {
 	color: white;
 }
 
@@ -61,5 +64,5 @@ a {
 
 .glyphicon {
 	font-size: 36px;
-	color: #0072B1;
+	color: white;
 }
