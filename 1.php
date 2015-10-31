@@ -45,7 +45,7 @@ if (isset($_POST['submit'])){
 
 			<div class="form-group">
 			    <div class="col-xs-offset-5 col-xs-3">
-			      <button type="submit" class="btn btn-default btn-block center-block">Sign In</button>
+			      <button type="submit" class="btn btn-default btn-block center-block" name="submit">Sign In</button>
 			    </div>
 			</div>
 
