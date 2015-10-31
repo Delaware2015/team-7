@@ -35,7 +35,10 @@
 				}
 				
 				while($row = $result->fetch_assoc()) {
-					echo 'haha';
+					if $row['completed'] == 1 {
+						$com = 'checked';
+					}
+					echo $com;
 				}
 				?>
 			</tbody>
