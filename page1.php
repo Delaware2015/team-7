@@ -28,7 +28,7 @@ if (isset($_POST['submit'])){
 	}
 	
 	if ($flag == "True") {
-		header("Location: http://ec2-54-87-67-182.compute-1.amazonaws.com/team-7/4.html");
+		header("Location: http://ec2-54-87-67-182.compute-1.amazonaws.com/team-7/4.php");
 	}	
 	
 } else {
