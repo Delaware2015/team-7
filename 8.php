@@ -15,19 +15,18 @@
 			
 								
 <?php
-/*require("database.php");
+require("database.php");
 $sql = "SLECT distinct t.deadline FROM tasks as t, student as s WHERE s.student_id = t.student_id ORDER BY t.deadline";
 $result = $conn->query($sql);
 
 while($row = $result->fetch_assoc()) {
-	*/
 ?>
-			<div class="row">
+			<div class="row"> <?php echo "test"; ?>
 				<div class="col-xs-12">
-					<h3><i><?//php echo $row['deadline']; ?></i></h3>
+					<h3><i><?php echo $row['deadline']; ?></i></h3>
 				</div>
 			</div>
-
+<?php } ?>
 			<table class="table-condensed">
 
 			</table>
