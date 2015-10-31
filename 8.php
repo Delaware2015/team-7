@@ -29,9 +29,7 @@ while($row = $result->fetch_assoc()) {
 			</div>
 <?php } ?>
 			<table class="table-condensed">
-<<<<<<< HEAD
 
-=======
 				<?php
 				
 				$sql2 = "SELECT * FROM task WHERE deadline in ".$row['deadline']."";
@@ -46,7 +44,6 @@ while($row = $result->fetch_assoc()) {
 					echo '<tr><td>'.$com.'</td><td>'.$row2['task_name'].'</td></tr>';
 				}
 				?>
->>>>>>> c2f230ac1e8d13d21724651af0f6c6061f3e30dd
 			</table>
 			<?php } ?>
 		</div>
