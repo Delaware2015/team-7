@@ -23,7 +23,7 @@ a {
 	color: #0072B1;
 }
 
-.top, .bottom{
+.top .col-xs-6, .bottom .col-xs-6 {
 	padding: 100px;
 }
 
