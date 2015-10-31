@@ -34,7 +34,7 @@ while($row = $result->fetch_assoc()) {
 				$sql2 = "SELECT * FROM task WHERE deadline in ".$row['deadline']."";
 				$result2 = $conn->query($sql2);
 				
-				while($row2 = $reseult2->fetch_assoc()) {
+				while($row2 = $result2->fetch_assoc()) {
 					echo '<tr><td>Something</td><td>'.$row2['task_name'].'</td></tr>';
 				}
 				?>
