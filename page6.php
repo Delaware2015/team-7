@@ -26,6 +26,7 @@
 				require("database.php");
 				$universityID = (isset($_GET['id'])) ? $_GET['id'] : '';
 				echo '<tr><td>Test0</td></tr>';
+				$result = $conn->query("SELECT * FROM task WHERE school_id = '".$universityID."'");
 
 				?>
 			</tbody>
