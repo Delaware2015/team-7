@@ -23,8 +23,9 @@
 			<tbody>
 				<?php
 				echo '<tr><td>Test-1</td></tr>';
+				require("database.php");
 
-?>
+				?>
 			</tbody>
 		</table>
 	</body>
