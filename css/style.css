@@ -7,14 +7,14 @@ h1 {
 	margin-bottom: 50px;
 }
 
-header {
+.header {
 	background-color: #0072B1;
 	color: white;
 }
 
 h2 {
 	color: #8C8C8C;
-	font-size: 3vw;
+	font-size: 4vw;
 }
 
 .table {
