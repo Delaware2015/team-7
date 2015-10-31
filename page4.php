@@ -11,7 +11,7 @@
 	<?php
 		if(isset($_POST['search'])){
 			header("Location: http://ec2-54-87-67-182.compute-1.amazonaws.com/team-7/page5.php");
-		} else if(isset(_$POST['calendar'])){
+		} elseif(isset(_$POST['calendar'])){
 			header("Location: http://ec2-54-87-67-182.compute-1.amazonaws.com/team-7/page8.php")
 		}
 	?>
