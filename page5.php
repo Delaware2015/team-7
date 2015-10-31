@@ -8,8 +8,8 @@
 	</head>
 	<body>
 		<div class="row">
-			<div col="col-xs-offset-4 col-xs-4">
-				<h1>Find Your College</h1>
+			<div class="col-xs-12">
+				<h1 class="text-center">Find Your College</h1>
 			</div>
 		</div>
 		<div class="row">
