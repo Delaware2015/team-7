@@ -16,7 +16,9 @@
 			<div class="col-xs-offset-1 col-xs-10">
 				<div class="input-group">
 				  <input type="text" class="form-control" placeholder="Search for Colleges" aria-describedby="basic-addon2">
-				  <a href="#"><span class="input-group-addon glyphicon glyphicon-search" id="basic-addon2"></span></a>
+				  <span class="input-group-btn glyphicon glyphicon-search">
+			      	<button class="btn btn-default" type="button"></button>
+			      </span>
 				</div>
 			</div>
 		</div>
