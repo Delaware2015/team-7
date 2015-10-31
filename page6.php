@@ -33,7 +33,13 @@
     					echo 'Could not run query: ' . mysql_error();
     					exit;
 				}
-
+				
+				while($row = $result->fetch_assoc()) {
+					if $row['completed'] == "1" {
+						$com = 'checked';
+					}
+					echo 'haha';
+				}
 				?>
 			</tbody>
 		</table>
