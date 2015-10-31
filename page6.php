@@ -24,7 +24,7 @@
 <?php
 require("database.php");
 $universityID = (isset($_GET['id'])) ? $_GET['id'] : '';
-$result = $conn->query("SELECT * FROM task WHERE school_id = '".$universityID."'");
+$result = $conn->query("SELECT * FROM task WHERE school_id = '".$universityID."';");
 
 if (!$result) {
     echo 'Could not run query: ' . mysql_error();
