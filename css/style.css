@@ -20,6 +20,11 @@ h2 {
 	font-size: 4vw;
 }
 
+.prof h2 {
+	margin-top: 75px;
+	margin-left: 50px;
+}
+
 .table {
 	margin-top: 50px;
 	width: 80%;

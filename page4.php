@@ -33,7 +33,7 @@
 			<div class="col-xs-8">
 				<div class="row">
 					<div class="col-xs-12">
-						<h3>Rachel Berry</h3>
+						<h2>Rachel Berry</h2>
 					</div>
 				</div>
 			</div>
