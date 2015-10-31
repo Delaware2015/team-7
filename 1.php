@@ -6,6 +6,12 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
 </head>
 <body>
+	
+<?php
+
+if(!$_POST['submit']) {
+
+?>
 	<div class="container-fluid">
 		<div class="row">
 			<div class="col-sm-12">
@@ -41,5 +47,19 @@
 
 		</form>
 	</div>
+<?php
+} else {
+
+	$username = $_POST['inputEmail3'];
+	$password = $_POST['inputPassword3'];
+	
+	if strcmp($username, 'rberry95@yahoo.com') == 0 {
+		if strcmp($password, 'team07') == 0 {
+			header('Location: http://ec2-54-87-67-182.compute-1.amazonaws.com/team-7/2.html');
+		}
+	}
+	echo 'Something went wrong! Oh no.';
+}
+?>
 </body>
 </html>
