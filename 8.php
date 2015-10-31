@@ -16,7 +16,7 @@
 								
 <?php
 require("database.php");
-$sql = "SLECT distinct t.deadline FROM tasks as t, student as s WHERE s.student_id = t.student_id ORDER BY t.deadline";
+$sql = "SELECT distinct t.deadline FROM tasks as t, student as s WHERE s.student_id = t.student_id ORDER BY t.deadline";
 $result = $conn->query($sql);
 
 while($row = $result->fetch_assoc()) {
@@ -29,7 +29,6 @@ while($row = $result->fetch_assoc()) {
 			</div>
 
 			<table class="table-condensed">
-
 			</table>
 		</div>
 	<body>
