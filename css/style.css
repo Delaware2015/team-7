@@ -23,6 +23,10 @@ a {
 	color: #0072B1;
 }
 
+.top, .bottom{
+	padding: 100px;
+}
+
 .top {
 	border-bottom: 1px solid #0072B1;
 }
